@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.bg-container {
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
+  margin: 0px;
+  min-height: 100vh;
+  padding: 0px;
+}
+.app-container {
+  margin: 10px auto;
+  width: 80%;
+  padding: 40px 40px;
+}
