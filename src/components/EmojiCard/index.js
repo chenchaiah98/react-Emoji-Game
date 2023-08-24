@@ -1,22 +1,20 @@
-// Write your code here.
 import './index.css'
 
 const EmojiCard = props => {
-  const {each, onEmojiClick} = props
-  const {id, emojiUrl, emojiName} = each
+  const {emojiDetails, clickEmoji} = props
+  const {id, emojiName, emojiUrl} = emojiDetails
 
-  const emojiBtn = () => {
-    onEmojiClick(id)
+  const onClickEmojiCard = () => {
+    clickEmoji(id)
   }
 
   return (
-    <li className="list-item">
-      <button className="button" type="button" onClick={emojiBtn}>
-        <div>
-          <img src={emojiUrl} alt={emojiName} />
-        </div>
+    <li className="emoji-item">
+      <button type="button" className="emoji-btn" onClick={onClickEmojiCard}>
+        <img className="emoji-icon" src={emojiUrl} alt={emojiName} />
       </button>
     </li>
   )
 }
+
 export default EmojiCard

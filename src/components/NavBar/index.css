@@ -1,23 +1,60 @@
-/* Write your code here. */
-.navbar-container {
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff33;
+  padding: 8px;
+}
+
+.title-with-score-container {
   display: flex;
   justify-content: space-between;
-  background: #ffffff33;
-  padding: 8px 40px;
+  flex-basis: 80%;
+  max-width: 1000px;
 }
-.navbar-log-container {
-  display: flex;
-  margin-left: 30px;
-}
-.score-card {
+
+.logo-and-title-container {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
+
+.emoji-logo {
+  width: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji-logo {
+    width: 48px;
+  }
+}
+
+.title {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+}
+
+.scores-container {
+  display: flex;
+}
+
 .score {
-  margin-right: 2.5rem;
-}
-.score p {
-  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
   font-weight: 500;
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .score {
+    font-size: 24px;
+    margin-left: 32px;
+  }
 }
